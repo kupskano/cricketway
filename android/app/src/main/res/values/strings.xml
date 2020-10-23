@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Cricket Way</string>
+    <string name="title_activity_main">Cricket Way</string>
+    <string name="package_name">io.ionic.waycricket</string>
+    <string name="custom_url_scheme">io.ionic.waycricket</string>
+</resources>

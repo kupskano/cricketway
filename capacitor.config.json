@@ -1,12 +1,12 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "cricketwayv2",
+  "appId": "io.ionic.waycricket",
+  "appName": "Cricket Way",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchShowDuration": 0   
     }
   },
   "cordova": {}

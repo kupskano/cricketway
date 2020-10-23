@@ -1,20 +1,124 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar-main">
     <ion-title>
       Blank
     </ion-title>
+    <ion-card>
+      <ion-card-content></ion-card-content>
+    </ion-card>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ 
+  <ion-card class="main-card">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    
+    <ion-header class="ion-no-border">
+      <ion-toolbar>
+        <ion-title>Cricket Way </ion-title>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon name="settings-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+      <!-- <ion-list-header style="margin-top: 10px;">this is subtitle</ion-list-header> -->
+
+    </ion-header>
+    <ion-card-content>
+              <ion-card class="pie-chart-card">
+                <ion-card-content>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="6">
+                        <canvas #barChart style="height: 100px;"></canvas>
+                      </ion-col>
+                      <ion-col size="6">
+                        <ion-label>Guide to Understand Cricket</ion-label>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-card-content>
+              </ion-card>
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" *ngFor="let firsttwocard of firsttwocards">
+          <ion-card class="third-card" (click)="twocards(firsttwocard)">
+            <ion-card-content>
+              <ion-card-title>{{firsttwocard.title}}</ion-card-title>
+              <ion-card-subtitle>{{firsttwocard.definition}}</ion-card-subtitle>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+
+     <!-- <ion-card color="light" class="card-carlo">
+    <div class="img-wrapper">
+      <img src="assets/icon/favicon.png" />
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="camera-outline" color="medium">
+        </ion-icon>
+      </ion-button>
+    </div>
+    <ion-card-content class="ion-text-center">
+      <h2>Zahra Zamin</h2>
+      <ion-text color="medium">
+        <div style="display: flex;" class="ion-justify-content-center">
+          <ion-icon name="location-outline" color="medium">
+          </ion-icon>
+          <p>2345 Street, Ohio, USA.</p>
+        </div>
+      </ion-text>
+    </ion-card-content>
+  </ion-card> -->
+  
+  </ion-card>
+
+  <ion-list-header lines="full">
+    <ion-label><b>Category List</b></ion-label>
+    <ion-button disabled>Explore</ion-button>
+  </ion-list-header>
+  
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Pokémon Yellow</ion-label>
+      <ion-buttons slot="end">
+        <ion-back-button icon="chevron-forward" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mega Man X</ion-label>
+      <ion-buttons slot="end">
+        <ion-back-button icon="chevron-forward" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label>The Legend of Zelda</ion-label>
+      <ion-buttons slot="end">
+        <ion-back-button icon="chevron-forward" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pac-Man</ion-label>
+      <ion-buttons slot="end">
+        <ion-back-button icon="chevron-forward" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label>Super Mario World</ion-label>
+      <ion-buttons slot="end">
+        <ion-back-button icon="chevron-forward" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+ 
+ 
+
+
+
 </ion-content>
